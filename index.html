@@ -19,11 +19,11 @@
 
         <nav>
 
-            <div>Inicio</div>
-            <div>Nosotros</div>
+            <a href="">Inicio</a>
+            <a href="#seccion1">Nosotros</a>
             <span>Logo</span>
-            <div>Capacidades</div>
-            <div>Contacto</div>
+            <a href="#seccion2">Capacidades</a>
+            <a href="#seccion3">Contacto</a>
 
         </nav>
 
@@ -153,29 +153,63 @@
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat lorem ac magna rhoncus, vitae lobortis risus volutpat. Cras maximus nisl vel pretium fermentum. Praesent eu arcu ullamcorper, dapibus arcu non, fermentum dui. Aliquam
                     finibus id velit sed venenatis. Nullam eros leo, vestibulum vel gravida et, interdum in libero. Curabitur eu felis eu arcu eleifend elementum. Integer in ex sed nibh molestie dapibus. Vestibulum ante ipsum primis in faucibus orci luctus
                     et ultrices posuere cubilia Curae. </p>
-
-
-
-
-
-
             </div>
-
-
-
-
 
 
         </article>
 
 
         <article id="seccion3">
-            Formulario
+            <div id="widget">
+                WIDGET
+            </div>
 
+            <div id="sec3-container">
+                <div id="cont-izq">
+                    <div class="titulo-izq">
+                        <h2 class="titulo-negro">Contacto</h2>
+                    </div>
+
+                    <div id="datos">
+                        <span>Telefono</span>
+                        <span>Celular</span>
+                        <span>Mail</span>
+                    </div>
+
+                </div>
+
+
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="email" class="form-control" id="nombre" placeholder="Nombre y Apellido" required>
+
+                        <label for="email">Email </label>
+                        <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" required>
+
+                        <label for="telefono">Telefono </label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="ej: 11-1234-5678" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+
+                        <span>Mensaje</span>
+
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje" required></textarea>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
+
+
+
+                    </div>
+                </form>
+            </div>
 
 
         </article>
 
+        <footer>
+            FOOTER
+
+
+        </footer>
 
 
 
