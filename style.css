@@ -1,549 +1,577 @@
-   :root {
-      --recuadros: #06abef;
-      --primario: #eaeaea;
-      --secundario: #323434;
-  }
-  
-  * {
-      margin: 0px;
-      padding: 0px;
-      box-sizing: border-box;
-  }
-  
-  body {
-      background-color: var(--primario);
-      overflow-x: hidden;
-  }
-  /*HEADER*/
-  
+:root {
+  --recuadros: #06abef;
+  --primario: #eaeaea;
+  --secundario: #323434;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primario);
+  overflow-x: hidden;
+}
+
+.inner-sec {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*HEADER*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 350px;
+  border-bottom: thin black 0.2;
+  background-color: var(--secundario);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 450;
+  font-size: 20px;
+  width: 150px;
+  height: 150px;
+  padding: 25px 25px;
+  line-height: 1.6em;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  width: 70%;
+  height: 50px;
+  background-color: rgba(234, 234, 234, 0.75);
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav > span {
+  display: flex;
+  width: 13%;
+  height: 115px;
+  background-color: darkslategrey;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > a {
+  display: flex;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+nav > a:hover {
+  background-color: rgba(10, 126, 194, 0.74);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+/*Carousel*/
+
+#carousel {
+  width: 100%;
+  height: 500px;
+  margin-top: 25px;
+}
+/*Comienzo sobre nosotros info*/
+
+#seccion1 {
+  width: 100%;
+  height: 100vh;
+}
+
+#sobre-nosotros {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 100px auto;
+}
+
+.titulo-izq {
+  display: flex;
+  width: 225px;
+  height: 269px;
+  border: 16px solid #06abef;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-negro {
+  font-size: 1.5em;
+  font-family: sans-serif;
+  line-height: 2em;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+#sobre-nosotros > p {
+  font-family: sans-serif;
+  line-height: 1.6em;
+  font-size: 0.75rem;
+  width: 335px;
+  height: auto;
+  text-align: justify;
+}
+/*Comienzo Seccion 2 / Trabajos */
+
+#seccion2 {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secundario);
+  color: white;
+}
+
+#contenedor-prim {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  padding-top: 35px;
+}
+
+#cont-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#foto-trabajos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#cont-col > p {
+  width: 100%;
+  margin-top: 15px;
+  text-align: justify;
+  font-size: 0.75rem;
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+#cont-abajo {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+}
+
+#titulo-obras {
+  display: flex;
+  width: 350px;
+  height: 364px;
+  border: 16px solid #06abef;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo-obras > h2 {
+  font-family: sans-serif;
+  line-height: 2em;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+#texto-foto {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#texto-foto > p {
+  text-align: justify;
+  font-size: 0.75rem;
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-left: 20px;
+  width: 100%;
+}
+
+#texto-foto > div {
+  padding-top: 15px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Seccion 2 Contenido Derecha*/
+
+#cont-der {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 100%;
+  margin-left: 20px;
+  padding-top: 61px;
+}
+
+#titulo-der {
+  display: flex;
+  width: 100%;
+  height: 315px;
+  border: 16px solid #06abef;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo-der > h2 {
+  font-family: sans-serif;
+  line-height: 2em;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+
+#cont-der > img {
+  padding-top: 20px;
+}
+
+#cont-der > p {
+  text-align: justify;
+  font-size: 0.75rem;
+  font-family: sans-serif;
+  line-height: 1.6em;
+  padding-top: 20px;
+}
+/*Seccion 3 Formulario*/
+
+#seccion3 {
+  width: 100%;
+  height: 100vh;
+}
+
+#widget {
+  margin: 25px auto;
+  width: 25%;
+  height: 100px;
+  background-color: var(--secundario);
+  color: white;
+}
+
+#sec3-container {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+}
+
+#cont-izq {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-top: 30px;
+  height: 100%;
+}
+
+#datos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  justify-content: space-evenly;
+}
+
+#datos > span {
+  font-family: sans-serif;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+/*FORMULARIO*/
+form {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 100%;
+  justify-content: flex-start;
+  padding: 20px;
+  line-height: 1.6rem;
+}
+
+.form-control {
+  background-color: var(--secundario);
+  color: rgba(255, 255, 255, 0.884);
+  width: 100%;
+  max-width: 1600px;
+}
+
+textarea {
+  background-color: var(--secundario);
+  color: rgba(255, 255, 255, 0.63);
+  padding-left: 8px;
+  width: 100%;
+}
+
+label {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.form-group > span {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+/*Titulos Seccion 2 Mobile*/
+
+.titulo-mobile {
+  display: none;
+}
+/*MEDIA QUERYS*/
+
+@media only screen and (max-width: 600px) {
   header {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 350px;
-      border-bottom: thin black 0.2;
-      background-color: var(--secundario);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+    height: 350px;
+    border-bottom: thin black 0.2;
+    background-color: var(--secundario);
   }
+
   
-  aside {
-      display: flex;
-      flex-direction: column;
-      color: white;
-      font-family: sans-serif;
-      font-weight: 450;
-      font-size: 20px;
-      width: 150px;
-      height: 150px;
-      padding: 25px 25px;
-      line-height: 1.6em;
-      justify-content: center;
-  }
-  
+
+  /*NAVBAR*/
   nav {
-      display: flex;
-      width: 70%;
-      height: 50px;
-      background-color: rgba(234, 234, 234, 0.75);
-      margin: auto;
-      justify-content: space-evenly;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 234, 234, 0.75);
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  
-  nav>span {
-      display: flex;
-      width: 13%;
-      height: 115px;
-      background-color: darkslategrey;
-      color: whitesmoke;
-      justify-content: center;
-      align-items: center;
+  nav > a {
+    /* display: flex;*/
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
   }
-  
-  nav>a {
-      display: flex;
-      font-size: 1.4rem;
-      font-family: sans-serif;
-      font-weight: 500;
-      text-decoration: none;
-      color: black;
+  nav > a:hover {
+    background-color: rgba(10, 126, 194, 0.74);
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
   }
-  
-  nav>a:hover {
-      background-color: rgba(10, 126, 194, 0.74);
-      height: 100%;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-decoration: none;
+  nav > span {
+    display: flex;
+    width: 25%;
+    height: 65px;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
   }
-  /*Carousel*/
-  
+  /*CAROUSEL*/
   #carousel {
-      width: 80%;
-      height: 500px;
-      margin: auto;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 20px 0px;
   }
-  /*Comienzo sobre nosotros info*/
-  
+  /*SECCION SOBRE NOSOTROS(1)*/
   #seccion1 {
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
   }
-  
   #sobre-nosotros {
-      display: flex;
-      height: 300px;
-      width: 80%;
-      justify-content: space-between;
-      margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
   }
-  
   .titulo-izq {
-      display: flex;
-      width: 225px;
-      height: 269px;
-      border: 16px solid #06abef;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    width: 85%;
+    height: 6em;
+    border: 13px solid #06abef;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 5px;
   }
-  
   .titulo-negro {
-      font-size: 1.5em;
-      font-family: sans-serif;
-      line-height: 2em;
-      letter-spacing: 0.15em;
-      text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    letter-spacing: 0.15em;
+    text-align: center;
   }
-  
-  #sobre-nosotros>p {
-      font-family: sans-serif;
-      line-height: 1.6em;
-      font-size: 0.75rem;
-      width: 335px;
-      height: auto;
-      text-align: justify;
+  #sobre-nosotros > p {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    font-size: 0.75rem;
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
   }
-  /*Comienzo Seccion 2 / Trabajos */
-  
+  /*SECCION 2*/
   #seccion2 {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-      background-color: var(--secundario);
-      color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--secundario);
+    color: white;
   }
-  
   #contenedor-prim {
-      display: flex;
-      flex-direction: column;
-      width: 65%;
-      height: 87%;
-      margin-top: 65px;
-      margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
   }
-  
-  #cont-col {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-  }
-  
   #foto-trabajos {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: -15px;
   }
-  
-  #cont-col>p {
-      width: 100%;
-      margin-top: 15px;
-      text-align: justify;
-      font-size: 0.75rem;
-      font-family: sans-serif;
-      line-height: 1.6em;
+  #cont-col > p {
+    width: 90%;
+    text-align: justify;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    line-height: 1.6em;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
   }
-  
-  #cont-abajo {
-      display: flex;
-      width: 100%;
-      height: auto;
-      margin-top: 25px;
+  #foto-trabajos > img {
+    width: 100px;
+    height: 100px;
   }
-  
-  #titulo-obras {
-      display: flex;
-      width: 350px;
-      height: 374px;
-      border: 16px solid #06abef;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  #titulo-obras>h2 {
-      font-family: sans-serif;
-      line-height: 2em;
-      font-size: 1.5em;
-      letter-spacing: 0.15em;
-      text-align: center;
-  }
-  
-  #texto-foto {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 100%;
-  }
-  
-  #texto-foto>p {
-      text-align: justify;
-      font-size: 0.75rem;
-      font-family: sans-serif;
-      line-height: 1.6em;
-      padding-left: 20px;
-      width: 100%;
-  }
-  
-  #texto-foto>div {
-      padding-top: 15px;
-      margin-left: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-  /* Seccion 2 Contenido Derecha*/
-  
-  #cont-der {
-      display: flex;
-      flex-direction: column;
-      width: 15%;
-      height: 87%;
-      margin-top: 65px;
-      margin-right: auto;
-      padding-left: 20px;
-  }
-  
   #titulo-der {
-      display: flex;
-      width: 265px;
-      height: 350px;
-      border: 16px solid #06abef;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
+    display: none;
   }
-  
-  #titulo-der>h2 {
-      font-family: sans-serif;
-      line-height: 2em;
-      font-size: 1.5em;
-      letter-spacing: 0.15em;
-      text-align: center;
-  }
-  
-  #cont-der>img {
-      padding-top: 20px;
-  }
-  
-  #cont-der>p {
-      text-align: justify;
-      font-size: 0.75rem;
-      font-family: sans-serif;
-      line-height: 1.6em;
-      padding-top: 20px;
-  }
-  /*Seccion 3 Formulario*/
-  
-  #seccion3 {
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      height: 100vh;
-  }
-  
-  #widget {
-      margin: 25px auto;
-      width: 25%;
-      height: 100px;
-      background-color: var(--secundario);
-      color: white;
-  }
-  
-  #sec3-container {
-      display: flex;
-      margin: 0px auto;
-      width: 80%;
-      height: 70%;
-  }
-  
-  #cont-izq {
-      display: flex;
-      flex-direction: column;
-      width: 25%;
-      padding-top: 30px;
-      height: 100%;
-  }
-  
-  #datos {
-      display: flex;
-      flex-direction: column;
-      margin-top: 25px;
-      justify-content: space-evenly;
-  }
-  
-  #datos>span {
-      font-family: sans-serif;
-      font-weight: 450;
-      font-size: 20px;
-      line-height: 1.6em;
-  }
-  /*FORMULARIO*/
-  
-  .form-group {
-      display: flex;
-      flex-direction: column;
-      width: 40vw;
-      height: 100%;
-      margin: auto;
-      justify-content: flex-start;
-      padding: 20px;
-      line-height: 1.6rem;
-  }
-  
-  .form-control {
-      background-color: var(--secundario);
-      color: rgba(255, 255, 255, 0.884);
-  }
-  
-  textarea {
-      background-color: var(--secundario);
-      color: rgba(255, 255, 255, 0.63);
-      padding-left: 8px;
-  }
-  
-  label {
-      font-family: sans-serif;
-      font-weight: 500;
-      font-size: 18px;
-      padding-top: 10px;
-  }
-  
-  .form-group>span {
-      font-family: sans-serif;
-      font-weight: 500;
-      font-size: 18px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-  }
-  /*FOOTER*/
-  
-  footer {
-      width: 100vw;
-      height: 13vh;
-      background-color: var(--secundario);
-      color: white;
-      font-family: sans-serif;
-  }
-  /*Titulos Seccion 2 Mobile*/
-  
   .titulo-mobile {
-      display: none;
+    display: flex;
+    width: 85%;
+    height: 6em;
+    border: 13px solid #06abef;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 30px;
+    margin-bottom: 25px;
   }
-  /*MEDIA QUERYS*/
-  
-  @media only screen and (max-width: 600px) {
-      /*NAVBAR*/
-      nav {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(234, 234, 234, 0.75);
-          margin-bottom: 20px;
-          justify-content: space-evenly;
-          align-items: center;
-      }
-      nav>a {
-          display: flex;
-          font-size: 1.2rem;
-          font-family: sans-serif;
-          font-weight: 500;
-          text-decoration: none;
-          color: black;
-      }
-      nav>a:hover {
-          background-color: rgba(10, 126, 194, 0.74);
-          height: auto;
-          width: 100%;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          text-decoration: none;
-      }
-      nav>span {
-          display: flex;
-          width: 25%;
-          height: 65px;
-          background-color: darkslategrey;
-          color: whitesmoke;
-          justify-content: center;
-          align-items: center;
-      }
-      /*CAROUSEL*/
-      #carousel {
-          width: 100%;
-          height: auto;
-          margin: 20px 0px 20px 0px;
-      }
-      /*SECCION SOBRE NOSOTROS(1)*/
-      #seccion1 {
-          display: flex;
-          flex-direction: column;
-          width: 100vw;
-          height: auto;
-      }
-      #sobre-nosotros {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          width: 100%;
-          justify-content: space-between;
-          margin: auto;
-      }
-      .titulo-izq {
-          display: flex;
-          width: 85%;
-          height: 6em;
-          border: 13px solid #06abef;
-          justify-content: center;
-          align-items: center;
-          margin-top: 10px;
-          margin-left: 30px;
-          margin-bottom: 5px;
-      }
-      .titulo-negro {
-          font-size: 1.5em;
-          font-family: sans-serif;
-          letter-spacing: 0.15em;
-          text-align: center;
-      }
-      #sobre-nosotros>p {
-          font-family: sans-serif;
-          line-height: 1.6em;
-          font-size: 0.75rem;
-          width: 90%;
-          height: auto;
-          margin-top: 10px;
-          margin-left: 15px;
-          margin-bottom: 5px;
-      }
-      /*SECCION 2*/
-      #seccion2 {
-          display: flex;
-          flex-direction: column;
-          width: 100vw;
-          height: auto;
-          background-color: var(--secundario);
-          color: white;
-      }
-      #contenedor-prim {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: 50%;
-      }
-      #foto-trabajos {
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          width: 100%;
-          height: 30%;
-          margin-top: auto;
-          margin-bottom: 10px;
-          margin-left: -15px;
-      }
-      #cont-col>p {
-          width: 90%;
-          text-align: justify;
-          font-size: 0.75rem;
-          font-family: sans-serif;
-          line-height: 1.6em;
-          margin-top: 10px;
-          margin-left: 15px;
-          margin-bottom: 5px;
-      }
-      #foto-trabajos>img {
-          width: 100px;
-          height: 100px;
-      }
-      #titulo-der {
-          display: none;
-      }
-      .titulo-mobile {
-          display: flex;
-          width: 85%;
-          height: 6em;
-          border: 13px solid #06abef;
-          justify-content: center;
-          align-items: center;
-          margin-top: -30px;
-          margin-left: 30px;
-          margin-bottom: 25px;
-      }
-      .titulo-mobile>h2 {
-          font-size: 1.5em;
-          font-family: sans-serif;
-          letter-spacing: 0.15em;
-          text-align: center;
-      }
-      #cont-abajo {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          height: auto;
-          margin-top: 25px;
-      }
-      #titulo-obras {
-          display: flex;
-          width: 85%;
-          height: 8em;
-          border: 13px solid #06abef;
-          justify-content: center;
-          align-items: center;
-          margin-left: 30px;
-          margin-bottom: 25px;
-      }
-      #texto-foto>p {
-          font-family: sans-serif;
-          text-align: justify;
-          line-height: 1.6em;
-          font-size: 0.75rem;
-          width: 90%;
-          height: auto;
-          margin-top: 10px;
-          margin-left: -5px;
-          margin-bottom: 5px;
-      }
-      #texto-foto {
-          display: flex;
-          flex-direction: column;
-          height: auto;
-          width: 100%;
-      }
-      #texto-foto>div {
-          display: flex;
-          width: 80%;
-          height: auto;
-          justify-content: space-between;
-          margin-left: 45px;
-          margin-top: 10px;
-      }
-      #texto-foto>div>img {
-          width: 100px;
-          height: 100px;
-      }
+  .titulo-mobile > h2 {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    letter-spacing: 0.15em;
+    text-align: center;
   }
+  #cont-abajo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+  #titulo-obras {
+    display: flex;
+    width: 85%;
+    height: 8em;
+    border: 13px solid #06abef;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 25px;
+  }
+  #texto-foto > p {
+    font-family: sans-serif;
+    text-align: justify;
+    line-height: 1.6em;
+    font-size: 0.75rem;
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: -5px;
+    margin-bottom: 5px;
+  }
+  #texto-foto {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  #texto-foto > div {
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-top: 10px;
+  }
+  #texto-foto > div > img {
+    width: 100px;
+    height: 100px;
+  }
+}
