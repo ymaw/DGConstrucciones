@@ -125,13 +125,13 @@ nav>a:hover {
     width: 100%;
     justify-content: space-between;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 85px;
 }
 
 #titulo-izq {
     display: flex;
     width: 225px;
-    height: 365px;
+    height: 270px;
     border: 16px solid #06abef;
     justify-content: center;
     align-items: center;
@@ -148,9 +148,9 @@ nav>a:hover {
 #sobre-nosotros>p {
     font-family: sans-serif;
     line-height: 1.6em;
-    font-size: 0.80rem;
-    width: 335px;
-    height: auto;
+    font-size: 0.85rem;
+    width: 300px;
+    height: 270px;
     text-align: justify;
     margin: auto;
 }
@@ -170,7 +170,7 @@ nav>a:hover {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding-top: 35px;
+    padding-top: 55px;
     margin: auto;
 }
 
@@ -201,14 +201,15 @@ nav>a:hover {
     display: flex;
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 55px;
 }
 
 #titulo-obras {
     display: flex;
-    width: 350px;
-    height: 389px;
+    width: 345px;
+    height: 430px;
     border: 16px solid #06abef;
+    margin: auto;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -269,8 +270,8 @@ nav>a:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
-    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-top: 55px;
 }
 
 #titulo-der>h2 {
@@ -292,7 +293,7 @@ nav>a:hover {
     font-size: 0.8rem;
     font-family: sans-serif;
     line-height: 1.6em;
-    margin: 20px auto;
+    margin: 55px auto;
 }
 
 
@@ -323,7 +324,7 @@ nav>a:hover {
 #cont-izq {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 25%;
     max-width: 30%;
     padding-top: 30px;
     height: 100%;
@@ -514,7 +515,7 @@ label {
     #titulo-izq {
         display: flex;
         width: 90%;
-        height: 6em;
+        height: 4em;
         border: 13px solid #06abef;
         justify-content: center;
         align-items: center;
@@ -637,6 +638,9 @@ label {
         display: inherit;
     }
     #no-mobile {
+        display: none;
+    }
+    #info-desktop {
         display: none;
     }
     #cont-der>p {
