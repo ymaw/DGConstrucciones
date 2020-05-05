@@ -305,6 +305,7 @@ nav>a:hover {
 }
 
 #widget {
+    display: none;
     margin: 25px auto;
     width: 100%;
     max-width: 50%;
@@ -693,13 +694,13 @@ label {
         margin-top: 15px;
         margin-left: auto;
         width: 100%;
-        max-width: 90%;
+        max-width: 95%;
         justify-content: space-evenly;
     }
     #datos>span {
         font-family: sans-serif;
         font-weight: 450;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.6em;
     }
     #contacto-titulo {
