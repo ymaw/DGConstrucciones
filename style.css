@@ -74,19 +74,13 @@ nav {
     align-items: center;
 }
 
-nav>span {
+#logo {
     display: flex;
-    width: 13%;
-    height: 115px;
-    background-color: darkslategrey;
-    color: whitesmoke;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
-}
-
-span>img {
-    width: 100%;
-    height: 100%;
 }
 
 nav>a {
@@ -491,14 +485,14 @@ label {
         color: white;
         text-decoration: none;
     }
-    nav>span {
+    #logo {
         display: flex;
-        width: 25%;
-        height: 65px;
-        background-color: darkslategrey;
-        color: whitesmoke;
+        max-width: 220px;
+        width: 220px;
+        height: 85px;
         justify-content: center;
         align-items: center;
+        margin-top: -9.5px;
     }
     /*CAROUSEL*/
     #carousel {
