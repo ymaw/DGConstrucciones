@@ -186,22 +186,22 @@
                     </div>
 
 
-                    <form action="mailto:fvolpi92@gmail.com" metohd="get" enctype="text/plain">
+                    <form action="https://formspree.io/xaypnplg" method="POST">
                         <div class="form-group">
                             <label for="nombre">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+                            <input type="text" class="form-control" id="nombre" name="name" placeholder="Nombre y Apellido">
 
                             <label for="email">Email </label>
-                            <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com" required>
+                            <input type="email" class="form-control" id="email" name="replyto_" placeholder="email@ejemplo.com" required>
 
                             <label for="telefono">Telefono </label>
-                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="ej: 1112345678" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="ej: 1112345678" pattern="[0-9]{2}[0-9]{4}[0-9]{4}">
 
                             <span>Mensaje</span>
 
                             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje" required></textarea>
 
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                            <button type="submit" value="Send" class="btn btn-primary btn-lg btn-block">Enviar</button>
 
 
 
