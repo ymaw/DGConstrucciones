@@ -576,7 +576,7 @@ label {
         padding-top: 15px;
     }
     #foto-trabajos>img {
-        width: 95px;
+        width: 93px;
         height: 100px;
     }
     #titulo-der {
@@ -614,6 +614,9 @@ label {
         align-items: center;
         margin: auto;
         margin-bottom: 25px;
+    }
+    #titulo-obras>h2 {
+        font-size: 1.35em;
     }
     #texto-foto>p {
         font-family: sans-serif;
