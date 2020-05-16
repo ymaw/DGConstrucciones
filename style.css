@@ -576,7 +576,7 @@ label {
         padding-top: 15px;
     }
     #foto-trabajos>img {
-        width: 93px;
+        width: 90px;
         height: 100px;
     }
     #titulo-der {
@@ -637,18 +637,19 @@ label {
     #texto-foto>div {
         display: flex;
         flex-wrap: wrap;
-        width: 97%;
-        height: auto;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
         margin: auto;
     }
     #texto-foto>div>img {
-        width: 93px;
+        width: 90px;
         height: 100px;
-        margin: auto;
+        /* margin: auto;*/
     }
     .imglink {
-        width: 93px;
+        width: 91px;
         font-size: 0.75rem;
         color: #06abef;
     }
