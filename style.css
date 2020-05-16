@@ -576,7 +576,7 @@ label {
         padding-top: 15px;
     }
     #foto-trabajos>img {
-        width: 110px;
+        width: 95px;
         height: 100px;
     }
     #titulo-der {
@@ -640,12 +640,12 @@ label {
         margin: auto;
     }
     #texto-foto>div>img {
-        width: 110px;
+        width: 93px;
         height: 100px;
         margin: auto;
     }
     .imglink {
-        width: 100px;
+        width: 93px;
         font-size: 0.75rem;
         color: #06abef;
     }
